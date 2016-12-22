@@ -37,7 +37,7 @@ if (!isset($_POST['numA'],$_POST['numB']) || $_POST['numA'] === '' || $_POST['nu
     exit;
 }
 
-$a =$_POST['numA'];            //代入
+$a = $_POST['numA'];            //代入
 $b = $_POST['numB'];
 $ope = $_POST['operation'];
 
