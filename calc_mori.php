@@ -29,11 +29,8 @@
 if (!isset($_POST['numA'],$_POST['numB']) || $_POST['numA'] === '' || $_POST['numB'] === '' ) {    //未入力判定
     echo "数値を入力して「計算」を押してください。";
     exit;
-} elseif (!is_numeric($_POST['numA'])) {
+} elseif (!is_numeric($_POST['numA']) || !is_numeric($_POST['numB'])) {
     echo "半角数字を入力してください。";    //数字かどうか判定
-    exit;
-} elseif (!is_numeric($_POST['numB'])) {
-    echo "半角数字を入力してください。";
     exit;
 }
 
